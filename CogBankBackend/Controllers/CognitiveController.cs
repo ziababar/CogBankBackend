@@ -15,79 +15,26 @@ namespace CogBankBackend.Controllers
             return View();
         }
 
-        // GET: Cognitive/Details/5
-        public ActionResult Details(int id)
+        // GET: Cognitive
+        public ActionResult Vision()
         {
+            // Computer Vision
+            // Content Moderator
+            // Custom Vision Service
+            // Emotion API
+            // Face API
+            // Video Indexer
             return View();
         }
 
-        // GET: Cognitive/Create
-        public ActionResult Create()
+        // GET: Cognitive
+        public ActionResult Speech()
         {
+            // Bing Speech Service
+            // Custom Speech
+            // Speaker Recognition
+            // Translator Speech
             return View();
-        }
-
-        // POST: Cognitive/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Cognitive/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Cognitive/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Cognitive/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Cognitive/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }
