@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using CogBankBackend.Models;
 
 namespace CogBankBackend.Controllers
 {
@@ -24,6 +25,13 @@ namespace CogBankBackend.Controllers
             // Emotion API
             // Face API
             // Video Indexer
+
+            CognitiveModel cognitiveModel = new CognitiveModel();
+
+            if (cognitiveModel.cognitiveFeature == "false")
+            {
+                // do something
+            }
             return View();
         }
 
